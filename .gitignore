@@ -1,0 +1,2 @@
+# Ignora todos os arquivos .mp3 na pasta do projeto e subpastas
+*.mp3
