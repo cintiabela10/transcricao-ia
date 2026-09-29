@@ -1,0 +1,6 @@
+Python>=3.8
+FFmpeg>=9.0.2
+whisper
+whisper-timestamped
+matplotlib
+onnxruntime torchaudio
