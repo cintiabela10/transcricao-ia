@@ -1,5 +1,5 @@
 #código que cria um arquvio txt com a transcrição do áudio e o timestamp de cada frase dita
-import whisper_timestamped as whisper
+import whisper
 
 #função para transcrever o arquivo de áudio
 def transcrever_arquivo_com_timestamp(modelo_ia, nome_audio, idioma_audio):
@@ -23,5 +23,6 @@ def transcrever_arquivo_com_timestamp(modelo_ia, nome_audio, idioma_audio):
             
     print(f"Arquivo \"{nome_arquivo_txt}\" criado com sucesso.")
             
-
-transcrever_arquivo_com_timestamp("turbo", "audios/GT-10min-sem-tratamento.mp3", "pt")
+modelo_ia = input("Digite o modelo (medio, turbo, large): ")
+nome_audio = input("Digite a localização do audio (se estiver na mesma página, basta nome_audio.mp3): ")
+transcrever_arquivo_com_timestamp(modelo_ia, nome_audio, "pt")
